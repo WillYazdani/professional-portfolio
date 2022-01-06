@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+}
+
+/*header/navbar*/
+header {
+  padding: 20px 35px;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 999999;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: chartreuse;
+}
+
+header a {
+  text-decoration: none;
+  color: chartreuse;
+}
+
+header nav {
+  margin: 7px;
+}
+
+header nav ul {
+  display: flex;
+  flex: wrap;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul li a {
+  padding: 8px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  border-bottom: 3px solid chartreuse;
+  margin: 5px;
+  color: chartreuse;
+}
+
+header nav ul li a:hover {
+  background: chartreuse;
+  color: blueviolet;
+  border-radius: 10px;
+}
