@@ -53,7 +53,7 @@ header nav ul {
 header nav ul li a {
   padding: 8px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
+  font-size: 24px;
   border-bottom: 3px solid midnightblue;
   margin: 5px;
   color: midnightblue;
@@ -113,7 +113,7 @@ header nav ul li a:hover {
 
 .about-me p {
     padding: 20px;
-    font-size: 15px;
+    font-size: 20px;
 }
 /*about me end*/
 
@@ -151,27 +151,63 @@ header nav ul li a:hover {
 }
 
 .project1 {
+    width: 99%;
+    border: 5px solid midnightblue;
+    height: 49%;
+    position: relative;
+    transition: 0.3s;
+}
+
+.project1::before {
+    content:"";
+    background-image: url("../assets/images/run-buddy.jpg");
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: inherit;
+    opacity: 0.7;
+}
+
+.project1:hover {
+    width: 99%;
+    border: 5px solid midnightblue;
+    height: 49%;
+    position: relative;
     background-image: url("../assets/images/run-buddy.jpg");
     background-size: cover;
     background-position: inherit;
-    width: 99%;
-    border: 5px solid midnightblue;
+    opacity: 1;
 }
+
 .project {
     background-image: url("../assets/images/hero.jpg");
     background-size: cover;
     width: 49%;
     border: 5px solid midnightblue;
+    height: 24%;
+}
+
+.project-name1 {
+    background: midnightblue;
+    color: lightsteelblue;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+    line-height: 1.5;
+    top: 80%;
+    display: inline-block;
 }
 
 .project-name {
     background: midnightblue;
     color: lightsteelblue;
-    display: inline-block;
     padding: 10px 10px 10px 20px;
     position: relative;
-    top: 200px;
     line-height: 1.5;
+    top: 60%;
+    display: inline-block;
 }
 
 .projects > * {
@@ -202,23 +238,32 @@ header nav ul li a:hover {
     padding-right: 15px;  
 }
 
+.contact-info {
+    width: 100%;
+    justify-content: space-around;
+}
+
 .contact-info ul {
     display: flex;
     flex: wrap;
     list-style: none;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    height: 100%
 }
 
 .contact-info ul li {
     list-style: none;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info ul li a {
     color: lightsteelblue;
-    display: inline-block;
-    padding: 10px 10px 10px 20px;
-    position: relative;
-    line-height: 1.5;
-    font-size: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid midnightblue;
+    margin: 15px;
+    padding-bottom: 5px;
+    text-decoration: none;
 }
+/*contact info end*/
