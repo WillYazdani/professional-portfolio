@@ -5,13 +5,13 @@
 }
 
 body {
-  font-family: monospace;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /*header/navbar begin*/
 header {
   padding: 20px 35px;
-  background-color: blueviolet;
+  background-color:lightsteelblue;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -22,16 +22,20 @@ header {
   z-index: 999999;
 }
 
-header h1 {
+header h1 a {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  color: chartreuse;
+  background:midnightblue;
+  color:lightsteelblue;
+  padding: 5px 5px 5px 200px;
+  position: relative;
+  right: 40px;
 }
 
 header a {
   text-decoration: none;
-  color: chartreuse;
+  color: midnightblue;
 }
 
 header nav {
@@ -50,15 +54,16 @@ header nav ul li a {
   padding: 8px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
-  border-bottom: 3px solid chartreuse;
+  border-bottom: 3px solid midnightblue;
   margin: 5px;
-  color: chartreuse;
+  color: midnightblue;
 }
 
 header nav ul li a:hover {
-  background: chartreuse;
-  color: blueviolet;
+  background: midnightblue;
+  color: lightsteelblue;
   border-radius: 10px;
+  font-style: bold;
 }
 /*header/navbar end*/
 
@@ -75,8 +80,8 @@ header nav ul li a:hover {
 .hero h2 {
     margin: 50px;
     padding: 15px;
-    background: chartreuse;
-    color: blueviolet;
+    background: midnightblue;
+    color: lightsteelblue;
     font-size: 30px;
     text-align: center;
     border-radius: 10px;
@@ -95,13 +100,13 @@ header nav ul li a:hover {
     margin: 0px;
     min-width: 250px;
     max-width: 250px;
-    border-right: 5px solid blueviolet;
+    border-right: 5px solid lightsteelblue;
 }
 
 .about-me div h2 {
     font-size: 48px;
     text-decoration: none;
-    color: blueviolet;
+    color: lightsteelblue;
     text-align: right;
     padding-right: 15px;
 }
@@ -124,7 +129,7 @@ header nav ul li a:hover {
     margin: 0px;
     min-width: 250px;
     max-width: 250px;
-    border-right: 5px solid blueviolet;
+    border-right: 5px solid lightsteelblue;
     height: 100%;
     flex-grow: 1;
 }
@@ -132,7 +137,7 @@ header nav ul li a:hover {
 .work-header h2 {
     font-size: 48px;
     text-decoration: none;
-    color: blueviolet;
+    color: lightsteelblue;
     text-align: right;
     padding-right: 15px;
 }
@@ -146,27 +151,74 @@ header nav ul li a:hover {
 }
 
 .project1 {
-    background-image: url("../assets/images/hero.jpg");
+    background-image: url("../assets/images/run-buddy.jpg");
+    background-size: cover;
+    background-position: inherit;
     width: 99%;
-    border: 5px solid chartreuse;
+    border: 5px solid midnightblue;
 }
 .project {
     background-image: url("../assets/images/hero.jpg");
+    background-size: cover;
     width: 49%;
-    border: 5px solid chartreuse;
+    border: 5px solid midnightblue;
 }
 
 .project-name {
-    font-size: 24px;
-    background: chartreuse;
-    color: blueviolet;
+    background: midnightblue;
+    color: lightsteelblue;
     display: inline-block;
-    padding: 5px;
+    padding: 10px 10px 10px 20px;
     position: relative;
-    
+    top: 200px;
+    line-height: 1.5;
 }
 
 .projects > * {
     margin: 5px;
 }
 /*work end*/
+
+/*contact me begin*/
+.contact-me {
+    margin: 15px;
+    display: flex;
+    flex: wrap;
+    width: 100%;
+}
+
+.contact-me-header {
+    margin: 0px;
+    min-width: 250px;
+    max-width: 250px;
+    border-right: 5px solid lightsteelblue;
+}
+
+.contact-me-header h2 {
+    font-size: 48px;
+    text-decoration: none;
+    color: lightsteelblue;
+    text-align: right;
+    padding-right: 15px;  
+}
+
+.contact-info ul {
+    display: flex;
+    flex: wrap;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info ul li {
+    list-style: none;
+}
+
+.contact-info ul li a {
+    color: lightsteelblue;
+    display: inline-block;
+    padding: 10px 10px 10px 20px;
+    position: relative;
+    line-height: 1.5;
+    font-size: 20px;
+}
