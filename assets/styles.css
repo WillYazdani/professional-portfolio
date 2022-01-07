@@ -8,7 +8,7 @@ body {
   font-family: monospace;
 }
 
-/*header/navbar*/
+/*header/navbar begin*/
 header {
   padding: 20px 35px;
   background-color: blueviolet;
@@ -60,3 +60,113 @@ header nav ul li a:hover {
   color: blueviolet;
   border-radius: 10px;
 }
+/*header/navbar end*/
+
+/*hero begin*/
+.hero {
+    background-image: url("../assets/images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+.hero h2 {
+    margin: 50px;
+    padding: 15px;
+    background: chartreuse;
+    color: blueviolet;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+/*hero end*/
+
+/*about me begin*/
+.about-me {
+    margin: 15px;
+    display: flex;
+    flex: wrap;
+    width: 100%;
+}
+
+.about-me div {
+    margin: 0px;
+    min-width: 250px;
+    max-width: 250px;
+    border-right: 5px solid blueviolet;
+}
+
+.about-me div h2 {
+    font-size: 48px;
+    text-decoration: none;
+    color: blueviolet;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.about-me p {
+    padding: 20px;
+    font-size: 15px;
+}
+/*about me end*/
+
+/*work begin*/
+.work {
+    margin: 15px;
+    display: flex;
+    flex: wrap;
+    height: 1000px;
+}
+
+.work-header {
+    margin: 0px;
+    min-width: 250px;
+    max-width: 250px;
+    border-right: 5px solid blueviolet;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.work-header h2 {
+    font-size: 48px;
+    text-decoration: none;
+    color: blueviolet;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 15px 0 15px;
+}
+
+.project1 {
+    background-image: url("../assets/images/hero.jpg");
+    width: 99%;
+    border: 5px solid chartreuse;
+}
+.project {
+    background-image: url("../assets/images/hero.jpg");
+    width: 49%;
+    border: 5px solid chartreuse;
+}
+
+.project-name {
+    font-size: 24px;
+    background: chartreuse;
+    color: blueviolet;
+    display: inline-block;
+    padding: 5px;
+    position: relative;
+    
+}
+
+.projects > * {
+    margin: 5px;
+}
+/*work end*/
