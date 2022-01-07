@@ -5,13 +5,14 @@
 }
 
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 /*header/navbar begin*/
 header {
   padding: 20px 35px;
-  background-color:lightsteelblue;
+  background-color: lightsteelblue;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -26,8 +27,8 @@ header h1 a {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  background:midnightblue;
-  color:lightsteelblue;
+  background: midnightblue;
+  color: lightsteelblue;
   padding: 5px 5px 5px 200px;
   position: relative;
   right: 40px;
@@ -69,204 +70,213 @@ header nav ul li a:hover {
 
 /*hero begin*/
 .hero {
-    background-image: url("../assets/images/hero.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
+  background-image: url("../assets/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
 }
 
 .hero h2 {
-    margin: 50px;
-    padding: 15px;
-    background: midnightblue;
-    color: lightsteelblue;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 10px;
+  margin: 50px;
+  padding: 15px;
+  background: midnightblue;
+  color: lightsteelblue;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
 }
 /*hero end*/
 
 /*about me begin*/
 .about-me {
-    margin: 15px;
-    display: flex;
-    flex: wrap;
-    width: 100%;
+  margin: 15px;
+  display: flex;
+  flex: wrap;
+  width: 100%;
 }
 
 .about-me div {
-    margin: 0px;
-    min-width: 250px;
-    max-width: 250px;
-    border-right: 5px solid lightsteelblue;
+  margin: 0px;
+  min-width: 250px;
+  max-width: 250px;
+  border-right: 5px solid lightsteelblue;
 }
 
 .about-me div h2 {
-    font-size: 48px;
-    text-decoration: none;
-    color: lightsteelblue;
-    text-align: right;
-    padding-right: 15px;
+  font-size: 48px;
+  text-decoration: none;
+  color: lightsteelblue;
+  text-align: right;
+  padding-right: 15px;
 }
 
 .about-me p {
-    padding: 20px;
-    font-size: 20px;
+  padding: 20px;
+  font-size: 20px;
 }
 /*about me end*/
 
 /*work begin*/
 .work {
-    margin: 15px;
-    display: flex;
-    flex: wrap;
-    height: 1000px;
+  margin: 15px;
+  display: flex;
+  flex: wrap;
+  height: 1000px;
 }
 
 .work-header {
-    margin: 0px;
-    min-width: 250px;
-    max-width: 250px;
-    border-right: 5px solid lightsteelblue;
-    height: 100%;
-    flex-grow: 1;
+  margin: 0px;
+  min-width: 250px;
+  max-width: 250px;
+  border-right: 5px solid lightsteelblue;
+  height: 100%;
+  flex-grow: 1;
 }
 
 .work-header h2 {
-    font-size: 48px;
-    text-decoration: none;
-    color: lightsteelblue;
-    text-align: right;
-    padding-right: 15px;
+  font-size: 48px;
+  text-decoration: none;
+  color: lightsteelblue;
+  text-align: right;
+  padding-right: 15px;
 }
 
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-    padding: 0 15px 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0 15px 0 15px;
 }
 
 .project1 {
-    width: 99%;
-    border: 5px solid midnightblue;
-    height: 49%;
-    position: relative;
+  width: 99%;
+  border: 5px solid midnightblue;
+  height: 49%;
+  position: relative;
 }
 
 .project1 img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    transition: 0.3s;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 .project1 img:hover {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
 
 .project {
-    width: 49%;
-    border: 5px solid midnightblue;
-    height: 24%;
+  width: 49%;
+  border: 5px solid midnightblue;
+  height: 24%;
 }
 
 .project img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    transition: 0.3s;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 .project img:hover {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
 
 .project-name1 {
-    background: midnightblue;
-    color: lightsteelblue;
-    padding: 10px 10px 10px 20px;
-    position: relative;
-    line-height: 1.5;
-    bottom: 20%;
-    display: inline-block;
+  background: midnightblue;
+  color: lightsteelblue;
+  padding: 10px 10px 10px 20px;
+  position: relative;
+  line-height: 1.5;
+  bottom: 20%;
+  display: inline-block;
 }
 
 .project-name {
-    background: midnightblue;
-    color: lightsteelblue;
-    padding: 10px 10px 10px 20px;
-    position: relative;
-    line-height: 1.5;
-    bottom: 40%;
-    display: inline-block;
+  background: midnightblue;
+  color: lightsteelblue;
+  padding: 10px 10px 10px 20px;
+  position: relative;
+  line-height: 1.5;
+  bottom: 40%;
+  display: inline-block;
 }
 
 .projects > * {
-    margin: 5px;
+  margin: 5px;
 }
 /*work end*/
 
 /*contact me begin*/
 .contact-me {
-    margin: 15px;
-    display: flex;
-    flex: wrap;
-    width: 100%;
+  margin: 15px;
+  display: flex;
+  flex: wrap;
+  width: 100%;
 }
 
 .contact-me-header {
-    margin: 0px;
-    min-width: 250px;
-    max-width: 250px;
-    border-right: 5px solid lightsteelblue;
+  margin: 0px;
+  min-width: 250px;
+  max-width: 250px;
+  border-right: 5px solid lightsteelblue;
 }
 
 .contact-me-header h2 {
-    font-size: 48px;
-    text-decoration: none;
-    color: lightsteelblue;
-    text-align: right;
-    padding-right: 15px;  
+  font-size: 48px;
+  text-decoration: none;
+  color: lightsteelblue;
+  text-align: right;
+  padding-right: 15px;
 }
 
 .contact-info {
-    width: 100%;
-    justify-content: space-around;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .contact-info ul {
-    display: flex;
-    flex: wrap;
-    list-style: none;
-    justify-content: space-around;
-    height: 100%
+  display: flex;
+  flex: wrap;
+  list-style: none;
+  justify-content: space-around;
+  height: 100%;
 }
 
 .contact-info ul li {
-    list-style: none;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-info ul li a {
-    color: lightsteelblue;
-    font-size: 24px;
-    border-bottom: 2px solid midnightblue;
-    margin: 15px;
-    padding-bottom: 5px;
-    text-decoration: none;
+  color: lightsteelblue;
+  font-size: 24px;
+  border-bottom: 2px solid lightsteelblue;
+  margin: 15px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+  background: lightsteelblue;
+  color: midnightblue;
+  border-radius: 10px;
+  font-style: bold;
 }
 /*contact info end*/
+
+/*media queries begin*/
