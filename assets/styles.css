@@ -330,15 +330,21 @@ header nav ul li a:hover {
 
 @media screen and (max-width: 768px) {
   header {
-    padding: 20px 35px 10px 35px;
+    padding: 20px 10px 0 10px;
   }
+
   header nav ul {
-    padding: 6px;
+    padding: 0;
+  }
+
+  header nav li {
+    margin: 8px;
   }
 
   header nav ul li a {
-    font-size: 20px;
-    padding: 4px 8px;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
     border-bottom: none;
   }
 
@@ -359,9 +365,13 @@ header nav ul li a:hover {
   }
 
   .about-me p {
-    margin-top: 15px;
+    margin: 15px 15px 0 15px;
     font-size: 16px;
     text-align: center;
+  }
+
+  .about-me img {
+    margin: 0;
   }
 
   .work {
@@ -406,8 +416,7 @@ header nav ul li a:hover {
   }
 
   .contact-info ul li a {
-      font-size: 20px;
+    font-size: 20px;
   }
-
 }
 /*media queries end*/
