@@ -16,8 +16,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: sticky;
-  top: 0;
   background-size: cover;
   background-position: center;
   z-index: 999999;
@@ -45,7 +43,7 @@ header nav {
 
 header nav ul {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
   align-items: center;
@@ -76,6 +74,7 @@ header nav ul li a:hover {
   display: flex;
   justify-content: right;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .hero h2 {
@@ -91,20 +90,19 @@ header nav ul li a:hover {
 
 /*about me begin*/
 .about-me {
-  margin: 15px;
+  margin-top: 15px;
   display: flex;
-  flex: wrap;
   width: 100%;
 }
 
-.about-me div {
+.about-me-header {
   margin: 0px;
   min-width: 250px;
   max-width: 250px;
   border-right: 5px solid lightsteelblue;
 }
 
-.about-me div h2 {
+.about-me-header h2 {
   font-size: 48px;
   text-decoration: none;
   color: lightsteelblue;
@@ -112,18 +110,23 @@ header nav ul li a:hover {
   padding-right: 15px;
 }
 
+.about-me img {
+  max-height: 350px;
+  aspect-ratio: 2/3;
+  margin: 0 10px 0 20px;
+}
+
 .about-me p {
-  padding: 20px;
   font-size: 20px;
+  margin: 0 20px 0 5px;
 }
 /*about me end*/
 
 /*work begin*/
 .work {
-  margin: 15px;
+  margin-top: 15px;
   display: flex;
-  flex: wrap;
-  height: 1000px;
+  width: 100%;
 }
 
 .work-header {
@@ -131,8 +134,6 @@ header nav ul li a:hover {
   min-width: 250px;
   max-width: 250px;
   border-right: 5px solid lightsteelblue;
-  height: 100%;
-  flex-grow: 1;
 }
 
 .work-header h2 {
@@ -148,13 +149,13 @@ header nav ul li a:hover {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  padding: 0 15px 0 15px;
+  margin: 0 15px;
 }
 
 .project1 {
   width: 99%;
   border: 5px solid midnightblue;
-  height: 49%;
+  height: 500px;
   position: relative;
 }
 
@@ -176,7 +177,7 @@ header nav ul li a:hover {
 .project {
   width: 49%;
   border: 5px solid midnightblue;
-  height: 24%;
+  height: 250px;
 }
 
 .project img {
@@ -221,10 +222,9 @@ header nav ul li a:hover {
 
 /*contact me begin*/
 .contact-me {
-  margin: 15px;
-  display: flex;
-  flex: wrap;
+  margin: 15px 0;
   width: 100%;
+  display: flex;
 }
 
 .contact-me-header {
@@ -249,7 +249,7 @@ header nav ul li a:hover {
 
 .contact-info ul {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
   height: 100%;
@@ -280,6 +280,134 @@ header nav ul li a:hover {
 /*contact info end*/
 
 /*media queries begin*/
+@media screen and (max-width: 1308px) {
+  .project1 {
+    width: 99%;
+    height: 400px;
+    position: relative;
+  }
 
+  .project {
+    width: 100%;
+    height: 400px;
+  }
 
+  .project-name1 {
+    bottom: 50%;
+  }
+
+  .project-name {
+    bottom: 50%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  header {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header h1 {
+    text-align: center;
+    align-items: center;
+  }
+
+  header h1 a {
+    background: midnightblue;
+    color: lightsteelblue;
+    padding: 5px;
+    right: 0;
+  }
+
+  header nav ul {
+    padding: 15px;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px 35px 10px 35px;
+  }
+  header nav ul {
+    padding: 6px;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+    padding: 4px 8px;
+    border-bottom: none;
+  }
+
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me-header {
+    margin: 15px;
+    border-bottom: 5px solid lightsteelblue;
+    border-right: none;
+  }
+
+  .about-me-header h2 {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .about-me p {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .work {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-header {
+    margin: 15px;
+    border-bottom: 5px solid lightsteelblue;
+    border-right: none;
+    min-width: none;
+  }
+
+  .work-header h2 {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .project1 {
+    height: 200px;
+  }
+
+  .project {
+    height: 200px;
+  }
+
+  .contact-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-me-header {
+    margin: 15px;
+    border-bottom: 5px solid lightsteelblue;
+    border-right: none;
+  }
+
+  .contact-me-header h2 {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .contact-info ul li a {
+      font-size: 20px;
+  }
+
+}
 /*media queries end*/
