@@ -1,6 +1,6 @@
 # Professional Portfolio
 
-![alt](./assets/images/pf-screenshot.jpg)
+![site-screenshot](./assets/images/pf-screenshot.jpg)
 
 ## Objectives
 

@@ -9,7 +9,7 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
-/*header/navbar begin*/
+/*header/navbar*/
 header {
   padding: 20px 35px;
   background-color: lightsteelblue;
@@ -66,7 +66,7 @@ header nav ul li a:hover {
 }
 /*header/navbar end*/
 
-/*hero begin*/
+/*hero*/
 .hero {
   background-image: url("../assets/images/hero.jpg");
   background-size: cover;
@@ -88,7 +88,7 @@ header nav ul li a:hover {
 }
 /*hero end*/
 
-/*about me begin*/
+/*about me*/
 .about-me {
   margin-top: 15px;
   display: flex;
@@ -122,7 +122,7 @@ header nav ul li a:hover {
 }
 /*about me end*/
 
-/*work begin*/
+/*work*/
 .work {
   margin-top: 15px;
   display: flex;
@@ -220,7 +220,7 @@ header nav ul li a:hover {
 }
 /*work end*/
 
-/*contact me begin*/
+/*contact me*/
 .contact-me {
   margin: 15px 0;
   width: 100%;
@@ -279,7 +279,7 @@ header nav ul li a:hover {
 }
 /*contact info end*/
 
-/*media queries begin*/
+/*media queries*/
 @media screen and (max-width: 1308px) {
   .project1 {
     width: 99%;
